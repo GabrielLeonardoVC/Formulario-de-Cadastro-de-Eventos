@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro de Eventos</title>
+</head>
+<body>
+    <div class="retangulo">
+        <h1 class="h1_retangulo">Crie e compartilhe seu evento</h1>
+        <p class="p_retangulo"><b>O primeiro passo é preencher esse formulário de inscrição.</b></p>
+        <form action="slctevent">
+            <div class="retangulo2">
+                <h2 class="text_retangulo2">Informações do evento</h2>
+                <hr>
+                <label for="titulo_evento" class="paragraph_retangulo2">Título do Evento</label>
+                <p class="opacity">(Mínimo de 8 caracteres)</p>
+                <textarea id="titulo_evento" name="titulo_evento" rows="4" cols="30" placeholder="Escreva aqui..." class="abc"></textarea>
+                <label for="link_evento" class="paragraph_retangulo2">Link do evento</label>
+                <p class="opacity2">(comece com https://)</p>
+                <textarea id="link_evento" name="link_evento" rows="4" cols="30" placeholder="Escreva aqui..." class="abc2"></textarea>
+                <label for="whatsapp" class="paragraph_retangulo2">Whatsapp para contato</label>
+                <p class="opacity3">(somente números)</p>
+                <textarea id="whatsapp" name="whatsapp" rows="4" cols="30" placeholder="Escreva aqui..." class="abc3"></textarea>
+                <label for="info_extras" class="paragraph_retangulo2">Informações Extras</label>
+                <textarea id="info_extras" name="info_extras" rows="4" cols="30" placeholder="Escreva aqui..." class="abc4"></textarea>
+                <label for="categoria" class="paragraph_retangulo2">Categoria</label>
+                <select name="categoria" id="categoria">
+                    <option value="">Selecione</option>
+                    <option value="Festa">Festa</option>
+                    <option value="Palestra">Palestra</option>
+                    <option value="Evento Interno">Evento Interno</option>
+                    <option value="Evento Externo">Evento Externo</option>
+                </select>
+                <h2 class="text_retangulo2">Privacidade</h2>
+                <hr>
+                <label for="email_admin" class="paragraph_retangulo2">E-mail do Administrador</label>
+                <textarea id="email_admin" name="email_admin" rows="4" cols="30" placeholder="Escreva aqui..." class="abc5"></textarea>
+                <p class="opacity4">(digite um e-mail válido)</p>
+                <label for="senha_evento" class="paragraph_retangulo2">Senha de acesso para os participantes</label>
+                <textarea id="senha_evento" name="senha_evento" rows="4" cols="30" placeholder="Escreva aqui..." class="abc4"></textarea>
+                <p class="opacity5">(Mínimo 8 caracteres)</p>
+                <div class="checkbox_privado">
+                    <input class="selecionar" id="privado" type="checkbox" name="privado">
+                    <label for="privado">Evento Privado</label>
+                </div>
+                <h2 class="text_retangulo3">Dia e hora</h2>
+                <hr>
+                <div class="dia-hora">
+                    <div class="campo">
+                        <label for="data">Data</label>
+                        <input type="date" id="data" name="data">
+                    </div>
+                    <div class="campo">
+                        <label for="das">Das</label>
+                        <input type="time" id="das" name="das">
+                    </div>
+                    <div class="campo">
+                        <label for="ate">Até</label>
+                        <input type="time" id="ate" name="ate">
+                    </div>
+                </div>
+                <div class="rodape-form">
+                </div>
+                <div class="retangulo3">
+                    <button type="submit" class="salvar"><b>Salvar evento</b></button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
